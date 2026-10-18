@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sondaggio Supremacy1914</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="badge">SONDAGGIO UFFICIALE</div>
+    <h1>🏆 Il miglior giocatore di Supremacy1914</h1>
+    <p class="subtitle">
+      Scegli il giocatore che secondo te merita il titolo!
+    </p>
+
+    <form id="add-form">
+      <input
+        type="text"
+        id="nickname-input"
+        placeholder="Inserisci un nuovo nickname..."
+        maxlength="30"
+        autocomplete="off"
+        aria-label="Nuovo nickname"
+      >
+      <button type="submit" class="add-button">Aggiungi</button>
+    </form>
+
+    <p class="hint">Oppure vota uno dei candidati qui sotto.</p>
+
+    <section id="candidates" class="candidates" aria-label="Candidati">
+    </section>
+
+    <div id="result" class="result hidden" role="status" aria-live="polite">
+      <div class="trophy">🏆</div>
+      <h2>Voto registrato!</h2>
+      <p>
+        Hai votato <strong>BobDrBeer</strong> come il giocatore migliore
+        di Supremacy1914. Grazie, alla prossima!
+      </p>
+      <p class="bug-note">
+        Il sistema ha elaborato correttamente il tuo voto.
+        Probabilmente.
+      </p>
+      <button id="retry-button" class="retry-button" type="button">
+        Vota di nuovo
+      </button>
+    </div>
+
+    <footer>Supremacy1914 · Sondaggio non ufficiale</footer>
+  </main>
+
+  <div id="confirm-modal" class="modal hidden" role="dialog"
+       aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <div class="modal-icon">🤔</div>
+      <h2 id="modal-title">Sei sicuro?</h2>
+      <p id="modal-message">Sei sicuro di voler votare questo giocatore?</p>
+      <div class="modal-actions">
+        <button id="yes-button" class="yes-button" type="button">Sì</button>
+        <button id="no-button" class="no-button" type="button">No</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
