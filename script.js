@@ -1,11 +1,11 @@
 
 const initialCandidates = [
   "BobDrBeer",
-  "XX-Zoro-XX",
-  "talebano 001",
-  "N30N99",
-  "Italo Slavo",
-  "Cairon"
+  "Sandrobestia",
+  "W T F Kern",
+  "Robner",
+  "Topic",
+  "Dannex"
 ];
 
 let candidates = [...initialCandidates];
